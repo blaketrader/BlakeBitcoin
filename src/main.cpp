@@ -2861,7 +2861,7 @@ bool InitBlockIndex() {
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 112;
         block.nTime    = timeGenesisBlock;
-        block.nBits    = bnProofOfWorkLimit.GetCompact();
+        block.nBits    = 503382015;
         block.nNonce   = 183893667;
 
         if (fTestNet)

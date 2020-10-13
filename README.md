@@ -19,7 +19,11 @@ The difficulty ajustment is also same as per Bitcoin
 
 Ubuntu 12.04 dependancies that are used on the Linux build machine:
 
-git-core build-essential libssl-dev libboost-all-dev libdb5.1-dev libdb5.1++-dev libgtk2.0-dev libminiupnpc-dev qt4-qmake mingw32 synaptic qt-sdk qt4-dev-tools libqt4-dev libqt4-core libqt4-gui libdb++-dev
+`git software-properties-common libqt4* libqtcore4 libqtgui4 libqtwebkit4 qt4* libqt4-dev libminiupnpc-dev mingw-w64 build-essential libboost-dev libssl-dev libdb-dev libdb++-dev openssl-1.1.1.g`
+
+Running blakebitcoind: In 'BlakeBitcoin/src' folder, just run: `make -f makefile.unix` `./blakebitcoind --daemon`
+
+Running blakebitcoin-qt: In 'BlakeBitcoin' folder, just run: `qmake` `make` `sudo QT_X11_NO_MITSHM=1 ./blakebitcoin-qt`
 
 License:
 
